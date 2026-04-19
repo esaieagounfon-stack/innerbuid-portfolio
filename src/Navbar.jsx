@@ -28,9 +28,9 @@ export default function Navbar() {
         <a
           href="#hero"
           className="text-lg font-bold tracking-wider"
-          style={{ color: "#97C459" }}
+          style={{ color: "#006400" }}
         >
-          Portfolio
+          Esaie AGOUNFON
         </a>
 
         {/* Desktop Navigation */}
@@ -40,12 +40,12 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className="text-sm font-medium transition-colors duration-300 hover:text-opacity-70"
-              style={{ color: "#E0E0E0" }}
+              style={{ color: "#006400" }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = "#97C459";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = "#E0E0E0";
+                e.currentTarget.style.color = "#006400";
               }}
             >
               {link.label}
@@ -99,13 +99,13 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className="text-sm font-medium transition-colors duration-300"
-                style={{ color: "#E0E0E0" }}
+                style={{ color: "#006400" }}
                 onClick={() => setIsOpen(false)}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.color = "#97C459";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = "#E0E0E0";
+                  e.currentTarget.style.color = "#006400";
                 }}
               >
                 {link.label}

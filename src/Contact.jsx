@@ -99,7 +99,7 @@ function SocialCard({ s, index, visible }) {
         }}>{s.name}</p>
         <p style={{
           fontSize: "11px",
-          color: "rgba(192,221,151,0.45)",
+          color: "#006400",
           fontFamily: "'JetBrains Mono', monospace",
           overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
         }}>{s.handle}</p>
@@ -107,7 +107,7 @@ function SocialCard({ s, index, visible }) {
       <svg
         width="14" height="14" viewBox="0 0 16 16" fill="none"
         style={{
-          color: hovered ? s.color : "rgba(192,221,151,0.25)",
+          color: hovered ? s.color : "#006400",
           transform: hovered ? "translate(2px,-2px)" : "translate(0,0)",
           transition: "all 0.2s", flexShrink: 0,
         }}
@@ -161,7 +161,7 @@ export default function Contact() {
     display: "block",
     fontSize: "10px", fontWeight: 500,
     letterSpacing: "0.14em", textTransform: "uppercase",
-    color: "rgba(192,221,151,0.4)",
+    color: "#006400",
     marginBottom: "7px",
     fontFamily: "'JetBrains Mono', monospace",
   };
@@ -225,7 +225,7 @@ export default function Contact() {
           </h2>
           <p style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "13px", color: "rgba(192,221,151,0.5)",
+            fontSize: "13px", color: "#006400",
             maxWidth: "420px", lineHeight: 1.75,
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(16px)",
@@ -269,7 +269,7 @@ export default function Contact() {
                 }}>Message envoyé !</p>
                 <p style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: "12px", color: "rgba(192,221,151,0.5)",
+                  fontSize: "12px", color: "#006400",
                 }}>Je te réponds dès que possible.</p>
               </div>
             ) : (
@@ -382,7 +382,7 @@ export default function Contact() {
                 </p>
                 <p style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: "11px", color: "rgba(192,221,151,0.45)",
+                  fontSize: "11px", color: "#006400",
                 }}>
                   Freelance · Stage · Emploi · Collaboration
                 </p>
@@ -428,13 +428,13 @@ export default function Contact() {
         }}>
           <p style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "11px", color: "rgba(192,221,151,0.25)",
+            fontSize: "11px", color: "#006400",
           }}>
             © 2026 Esaïe AGOUNFON · InnerBuild S01
           </p>
           <p style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "11px", color: "rgba(192,221,151,0.25)",
+            fontSize: "11px", color: "#006400",
           }}>
             #FrontForge · #InnerBuild
           </p>
@@ -452,7 +452,7 @@ export default function Contact() {
           .contact-grid { grid-template-columns: 1fr !important; }
         }
         input::placeholder, textarea::placeholder {
-          color: rgba(192,221,151,0.22);
+          color: #006400;
         }
         input, textarea, button { font-family: inherit; }
       `}</style>

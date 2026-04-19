@@ -54,11 +54,7 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: `
-            linear-gradient(rgba(55,109,17,0.07) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(55,109,17,0.07) 1px, transparent 1px)
-          `,
-          backgroundSize: "48px 48px",
+          backgroundColor: "rgba(151,196,89,0.05)",
         }}
       />
 
@@ -72,8 +68,7 @@ export default function Hero() {
           width: "520px",
           height: "520px",
           borderRadius: "50%",
-          background:
-            "radial-gradient(circle, rgba(151,196,89,0.13) 0%, transparent 70%)",
+          background: "rgba(151,196,89,0.13)",
         }}
       />
       <div
@@ -183,7 +178,7 @@ export default function Hero() {
         <p
           className="max-w-xl mb-12 leading-relaxed"
           style={{
-            color: "rgba(192,221,151,0.7)",
+            color: "#006400",
             fontSize: "clamp(0.95rem, 1.8vw, 1.1rem)",
             animation: "fadeUp 0.6s 0.3s ease both",
             fontFamily: "'JetBrains Mono', monospace",
@@ -252,7 +247,7 @@ export default function Hero() {
         <div style={{ animation: "fadeUp 0.6s 0.5s ease both" }}>
           <p
             className="mb-3 text-xs tracking-widest uppercase"
-            style={{ color: "rgba(192,221,151,0.4)", fontFamily: "'JetBrains Mono', monospace" }}
+            style={{ color: "#006400", fontFamily: "'JetBrains Mono', monospace" }}
           >
             Stack
           </p>
@@ -263,18 +258,18 @@ export default function Hero() {
                 className="px-3 py-1 rounded-md text-xs font-medium transition-all duration-200"
                 style={{
                   background: "rgba(42,64,32,0.6)",
-                  border: "0.5px solid rgba(55,109,17,0.4)",
+                  border: "0.5px solid rgba(151,196,89,0.4)",
                   color: "#97C459",
                   fontFamily: "'JetBrains Mono', monospace",
                   cursor: "default",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(55,109,17,0.25)";
+                  e.currentTarget.style.background = "rgba(151,196,89,0.25)";
                   e.currentTarget.style.borderColor = "#97C459";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = "rgba(42,64,32,0.6)";
-                  e.currentTarget.style.borderColor = "rgba(55,109,17,0.4)";
+                  e.currentTarget.style.borderColor = "rgba(151,196,89,0.4)";
                 }}
               >
                 {tech}
@@ -339,7 +334,7 @@ export default function Hero() {
             width: "350px",
             height: "350px",
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(151,196,89,0.15) 0%, transparent 70%)",
+            background: "rgba(151,196,89,0.15)",
             pointerEvents: "none",
           }}
         />
@@ -391,7 +386,7 @@ export default function Hero() {
             fontSize: "10px",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
-            color: "rgba(192,221,151,0.35)",
+            color: "#006400",
             fontFamily: "'JetBrains Mono', monospace",
           }}
         >

@@ -40,7 +40,7 @@ export default function About() {
         style={{
           position: "absolute", top: 0, left: 0, right: 0,
           height: "1px",
-          background: "linear-gradient(90deg, transparent, rgba(151,196,89,0.25), transparent)",
+          background: "rgba(151,196,89,0.25)",
         }}
       />
 
@@ -119,7 +119,7 @@ export default function About() {
             </blockquote>
 
             <p style={{
-              color: "rgba(192,221,151,0.7)",
+              color: "#006400",
               fontSize: "15px", lineHeight: 1.85,
               fontFamily: "'JetBrains Mono', monospace",
               fontWeight: 400, marginBottom: "20px",
@@ -131,7 +131,7 @@ export default function About() {
             </p>
 
             <p style={{
-              color: "rgba(192,221,151,0.55)",
+              color: "#006400",
               fontSize: "14px", lineHeight: 1.85,
               fontFamily: "'JetBrains Mono', monospace",
               fontWeight: 400, marginBottom: "32px",
@@ -146,7 +146,7 @@ export default function About() {
             <div style={{ marginBottom: "32px" }}>
               <p style={{
                 fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase",
-                color: "rgba(192,221,151,0.35)", marginBottom: "12px",
+                color: "#006400", marginBottom: "12px",
                 fontFamily: "'JetBrains Mono', monospace",
               }}>
                 Ce qui me MOTIVE
@@ -157,19 +157,19 @@ export default function About() {
                     display: "inline-flex", alignItems: "center", gap: "6px",
                     padding: "6px 14px", borderRadius: "999px",
                     background: "rgba(42,64,32,0.5)",
-                    border: "0.5px solid rgba(55,109,17,0.4)",
+                    border: "0.5px solid rgba(151,196,89,0.4)",
                     color: "#97C459", fontSize: "12px",
                     fontFamily: "'JetBrains Mono', monospace",
                     transition: "background 0.2s, border-color 0.2s",
                     cursor: "default",
                   }}
                     onMouseEnter={e => {
-                      e.currentTarget.style.background = "rgba(55,109,17,0.2)";
+                      e.currentTarget.style.background = "rgba(151,196,89,0.2)";
                       e.currentTarget.style.borderColor = "#97C459";
                     }}
                     onMouseLeave={e => {
                       e.currentTarget.style.background = "rgba(42,64,32,0.5)";
-                      e.currentTarget.style.borderColor = "rgba(55,109,17,0.4)";
+                      e.currentTarget.style.borderColor = "rgba(151,196,89,0.4)";
                     }}
                   >
                     {p.icon} {p.label}
@@ -239,7 +239,7 @@ export default function About() {
               <div aria-hidden="true" style={{
                 position: "absolute", top: 0, right: 0,
                 width: "100px", height: "100px",
-                background: "radial-gradient(circle at top right, rgba(151,196,89,0.15), transparent 70%)",
+                background: "rgba(151,196,89,0.15)",
               }} />
 
               <img
@@ -281,7 +281,7 @@ export default function About() {
                   key={label}
                   style={{
                     borderRadius: "12px",
-                    border: "0.5px solid rgba(55,109,17,0.25)",
+                    border: "0.5px solid rgba(151,196,89,0.25)",
                     background: "rgba(22,35,16,0.6)",
                     padding: "18px 16px",
                     transition: "border-color 0.2s, background 0.2s",
@@ -291,10 +291,10 @@ export default function About() {
                   }}
                   onMouseEnter={e => {
                     e.currentTarget.style.borderColor = "rgba(151,196,89,0.5)";
-                    e.currentTarget.style.background = "rgba(55,109,17,0.12)";
+                    e.currentTarget.style.background = "rgba(151,196,89,0.12)";
                   }}
                   onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = "rgba(55,109,17,0.25)";
+                    e.currentTarget.style.borderColor = "rgba(151,196,89,0.25)";
                     e.currentTarget.style.background = "rgba(22,35,16,0.6)";
                   }}
                 >
@@ -304,7 +304,7 @@ export default function About() {
                     fontFamily: "'Syne', sans-serif",
                   }}>{value}</div>
                   <div style={{
-                    fontSize: "10px", color: "rgba(192,221,151,0.45)",
+                    fontSize: "10px", color: "#006400",
                     lineHeight: 1.4, fontFamily: "'JetBrains Mono', monospace",
                   }}>{label}</div>
                 </div>
@@ -318,7 +318,7 @@ export default function About() {
       <div aria-hidden="true" style={{
         position: "absolute", bottom: 0, left: 0, right: 0,
         height: "1px",
-        background: "linear-gradient(90deg, transparent, rgba(151,196,89,0.15), transparent)",
+        background: "rgba(151,196,89,0.15)",
       }} />
 
       <style>{`

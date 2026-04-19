@@ -6,13 +6,13 @@ const categories = [
     label: "Front-End",
     color: "#97C459",
     border: "rgba(151,196,89,0.35)",
-    bg: "rgba(55,109,17,0.10)",
+    bg: "rgba(151,196,89,0.10)",
     skills: [
       { name: "HTML5", level: 90 },
-      { name: "CSS3", level: 85 },
-      { name: "JavaScript", level: 78 },
+      { name: "CSS3", level: 70 },
+      { name: "JavaScript", level: 55 },
       { name: "React", level: 72 },
-      { name: "Tailwind CSS", level: 80 },
+      { name: "Tailwind CSS", level: 70 },
     ],
   },
   {
@@ -44,6 +44,7 @@ const categories = [
 ];
 
 const softSkills = [
+  { label: "Community Manager", icon: "◈" },
   { label: "Autonomie", icon: "◈" },
   { label: "Curiosité", icon: "◈" },
   { label: "Rigueur", icon: "◈" },
@@ -60,7 +61,7 @@ function SkillBar({ name, level, color, visible, delay }) {
         marginBottom: "6px",
       }}>
         <span style={{
-          fontSize: "12px", color: "rgba(192,221,151,0.75)",
+          fontSize: "12px", color: "#006400",
           fontFamily: "'JetBrains Mono', monospace",
         }}>{name}</span>
         <span style={{
@@ -110,7 +111,7 @@ export default function Skills() {
       {/* Séparateur haut */}
       <div aria-hidden="true" style={{
         position: "absolute", top: 0, left: 0, right: 0, height: "1px",
-        background: "linear-gradient(90deg, transparent, rgba(151,196,89,0.2), transparent)",
+        background: "rgba(151,196,89,0.2)",
       }} />
 
       {/* Glow décoratif droit */}
@@ -154,7 +155,7 @@ export default function Skills() {
           </h2>
           <p style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "12px", color: "rgba(192,221,151,0.4)",
+            fontSize: "12px", color: "#006400",
             maxWidth: "240px", lineHeight: 1.6,
             opacity: visible ? 1 : 0,
             transition: "all 0.6s 0.2s ease",
@@ -230,13 +231,13 @@ export default function Skills() {
           transform: visible ? "translateY(0)" : "translateY(24px)",
           transition: "all 0.6s 0.6s ease",
           borderRadius: "16px",
-          border: "0.5px solid rgba(55,109,17,0.2)",
+          border: "0.5px solid rgba(151,196,89,0.2)",
           background: "rgba(13,26,10,0.6)",
           padding: "28px 28px 24px",
         }}>
           <p style={{
             fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase",
-            color: "rgba(192,221,151,0.35)", marginBottom: "16px",
+            color: "#006400", marginBottom: "16px",
             fontFamily: "'JetBrains Mono', monospace",
           }}>Soft skills</p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
@@ -298,7 +299,7 @@ export default function Skills() {
               fontSize: "13px", fontWeight: 600, color: "#FAC775", marginBottom: "2px",
             }}>Je continuE d'apprendre</p>
             <p style={{
-              fontSize: "11px", color: "rgba(192,221,151,0.45)",
+              fontSize: "11px", color: "#006400",
               fontFamily: "'JetBrains Mono', monospace", lineHeight: 1.5,
             }}>
               Next.js · JavaScript · Node.js 

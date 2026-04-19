@@ -147,9 +147,9 @@ function ProjectCard({ project, index, visible }) {
             style={{
               width: "30px", height: "30px", borderRadius: "8px",
               display: "flex", alignItems: "center", justifyContent: "center",
-              border: "0.5px solid rgba(55,109,17,0.3)",
+              border: "0.5px solid rgba(151,196,89,0.3)",
               background: "rgba(22,35,16,0.8)",
-              color: "rgba(192,221,151,0.6)",
+              color: "#006400",
               transition: "all 0.2s",
               textDecoration: "none",
             }}
@@ -158,8 +158,8 @@ function ProjectCard({ project, index, visible }) {
               e.currentTarget.style.borderColor = project.color;
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.color = "rgba(192,221,151,0.6)";
-              e.currentTarget.style.borderColor = "rgba(55,109,17,0.3)";
+              e.currentTarget.style.color = "#006400";
+              e.currentTarget.style.borderColor = "rgba(151,196,89,0.3)";
             }}
           >
             <GithubIcon />
@@ -208,7 +208,7 @@ function ProjectCard({ project, index, visible }) {
       {/* Description */}
       <p style={{
         fontSize: "13px",
-        color: "rgba(192,221,151,0.6)",
+        color: "#006400",
         lineHeight: 1.75,
         marginBottom: "20px",
         fontFamily: "'JetBrains Mono', monospace",
@@ -225,7 +225,7 @@ function ProjectCard({ project, index, visible }) {
             padding: "3px 9px",
             borderRadius: "5px",
             background: "rgba(13,26,10,0.8)",
-            border: "0.5px solid rgba(55,109,17,0.25)",
+            border: "0.5px solid rgba(151,196,89,0.25)",
             color: "rgba(151,196,89,0.7)",
             fontFamily: "'JetBrains Mono', monospace",
           }}>
@@ -267,7 +267,7 @@ export default function Projects() {
       <div aria-hidden="true" style={{
         position: "absolute", bottom: "10%", left: "-100px",
         width: "420px", height: "420px", borderRadius: "50%",
-        background: "radial-gradient(circle,rgba(151,196,89,0.07) 0%,transparent 70%)",
+        background: "rgba(151,196,89,0.07)",
         pointerEvents: "none",
       }} />
 
@@ -312,7 +312,7 @@ export default function Projects() {
               display: "inline-flex", alignItems: "center", gap: "7px",
               padding: "9px 18px", borderRadius: "999px",
               border: "0.5px solid rgba(151,196,89,0.3)",
-              background: "rgba(55,109,17,0.08)",
+              background: "rgba(151,196,89,0.08)",
               color: "#97C459", fontSize: "12px", fontWeight: 600,
               textDecoration: "none",
               fontFamily: "'JetBrains Mono', monospace",
@@ -321,11 +321,11 @@ export default function Projects() {
               transition: "opacity 0.6s 0.2s ease, transform 0.6s 0.2s ease, background 0.2s, border-color 0.2s",
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = "rgba(55,109,17,0.18)";
+              e.currentTarget.style.background = "rgba(151,196,89,0.18)";
               e.currentTarget.style.borderColor = "rgba(151,196,89,0.6)";
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = "rgba(55,109,17,0.08)";
+              e.currentTarget.style.background = "rgba(151,196,89,0.08)";
               e.currentTarget.style.borderColor = "rgba(151,196,89,0.3)";
             }}
           >
@@ -359,7 +359,7 @@ export default function Projects() {
           <p style={{
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: "11px",
-            color: "rgba(192,221,151,0.3)",
+            color: "#006400",
             letterSpacing: "0.05em",
           }}>
             D'autres projets en cours...
