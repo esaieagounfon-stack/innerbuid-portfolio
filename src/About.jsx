@@ -8,10 +8,10 @@ const stats = [
 ];
 
 const passions = [
-  { icon: "⌨️", label: "Clean code" },
-  { icon: "🎨", label: "UI Design" },
-  { icon: "📱", label: "Mobile-first" },
-  { icon: "🚀", label: "Performance" },
+  { icon: "", label: "Clean code" },
+  { icon: "", label: "UI Design" },
+  { icon: "", label: "Mobile-first" },
+  { icon: "", label: "Performance" },
 ];
 
 export default function About() {
@@ -217,65 +217,58 @@ export default function About() {
               display: "flex", flexDirection: "column", gap: "20px",
             }}
           >
-            {/* Carte identité */}
+            {/* Photo professionnelle */}
             <div style={{
               borderRadius: "16px",
-              border: "0.5px solid rgba(55,109,17,0.3)",
-              background: "rgba(22,35,16,0.8)",
-              padding: "28px",
+              border: "0.5px solid rgba(151,196,89,0.3)",
+              background: "rgba(22,35,16,0.4)",
+              padding: "16px",
               position: "relative", overflow: "hidden",
-            }}>
-              {/* Accent coin */}
+              transition: "border-color 0.3s, background 0.3s",
+            }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = "rgba(151,196,89,0.6)";
+                e.currentTarget.style.background = "rgba(22,35,16,0.6)";
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = "rgba(151,196,89,0.3)";
+                e.currentTarget.style.background = "rgba(22,35,16,0.4)";
+              }}
+            >
+              {/* Accent corner */}
               <div aria-hidden="true" style={{
                 position: "absolute", top: 0, right: 0,
-                width: "80px", height: "80px",
-                background: "radial-gradient(circle at top right, rgba(151,196,89,0.12), transparent 70%)",
+                width: "100px", height: "100px",
+                background: "radial-gradient(circle at top right, rgba(151,196,89,0.15), transparent 70%)",
               }} />
 
-              {/* Avatar initiales */}
+              <img
+                src="/image/img1.jpg"
+                alt="Photo Esaïe"
+                className="w-full h-auto rounded-md object-cover relative z-10"
+                style={{
+                  border: "1px solid rgba(151,196,89,0.25)",
+                  boxShadow: "0 10px 30px rgba(151,196,89,0.1)",
+                  aspectRatio: "3/4",
+                }}
+              />
+
+              {/* Overlay text */}
               <div style={{
-                width: "64px", height: "64px", borderRadius: "50%",
-                background: "rgba(55,109,17,0.25)",
-                border: "1px solid rgba(151,196,89,0.4)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                marginBottom: "20px",
-                fontSize: "22px", fontWeight: 700, color: "#97C459",
+                position: "absolute", bottom: 0, left: 0, right: 0,
+                background: "linear-gradient(180deg, transparent 0%, rgba(13,26,10,0.95) 60%)",
+                padding: "24px",
+                zIndex: 20,
               }}>
-                E
-              </div>
-
-              <p style={{
-                fontSize: "20px", fontWeight: 700, color: "#EAF3DE",
-                marginBottom: "4px",
-              }}>Esaïe</p>
-              <p style={{
-                fontSize: "12px", color: "#97C459", marginBottom: "20px",
-                fontFamily: "'JetBrains Mono', monospace",
-              }}>Développeur Full-Stack</p>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {[
-                  { label: "Localisation", value: "Abomey-Calavi, Bénin" },
-                  { label: "Disponibilité", value: "Ouvert aux projets" },
-                  { label: "Stack", value: "React · Tailwind · JS . HTML" },
-                  { label: "Objectif", value: "Freelance & Emploi" },
-                ].map(({ label, value }) => (
-                  <div key={label} style={{
-                    display: "flex", justifyContent: "space-between",
-                    alignItems: "center",
-                    paddingBottom: "10px",
-                    borderBottom: "0.5px solid rgba(55,109,17,0.15)",
-                  }}>
-                    <span style={{
-                      fontSize: "11px", color: "rgba(192,221,151,0.4)",
-                      fontFamily: "'JetBrains Mono', monospace",
-                    }}>{label}</span>
-                    <span style={{
-                      fontSize: "12px", color: "#FAC775",
-                      fontFamily: "'JetBrains Mono', monospace",
-                    }}>{value}</span>
-                  </div>
-                ))}
+                <p style={{
+                  color: "#97C459", fontSize: "17px", fontWeight: 600,
+                  fontFamily: "'JetBrains Mono', monospace",
+                  marginBottom: "4px",
+                }}>Développeur Web</p>
+                <p style={{
+                  color: "#EAF3DE", fontSize: "14px", fontWeight: 500,
+                  fontFamily: "'Syne', sans-serif",
+                }}> Bénin 🇧🇯</p>
               </div>
             </div>
 

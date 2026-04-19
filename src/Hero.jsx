@@ -114,7 +114,7 @@ export default function Hero() {
               animation: "pulse 2s infinite",
             }}
           />
-          Quelle est ta préoccupation ?
+          Que puis-je faire pour toi ?
         </div>
 
         {/* Nom principal */}
@@ -284,6 +284,100 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* ── Photo professionnelle circulaire ── */}
+      <div
+        className="absolute hidden lg:flex right-0 top-1/2 transform -translate-y-1/2 -translate-x-12"
+        style={{
+          animation: "fadeUp 0.8s 0.5s ease both",
+        }}
+      >
+        {/* Cercles de décoration */}
+        <div
+          style={{
+            position: "absolute",
+            width: "380px",
+            height: "380px",
+            borderRadius: "50%",
+            border: "1px solid rgba(151,196,89,0.2)",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            animation: "spin 30s linear infinite",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            width: "420px",
+            height: "420px",
+            borderRadius: "50%",
+            border: "1px solid rgba(212,83,126,0.15)",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            animation: "spin 40s linear infinite reverse",
+          }}
+        />
+
+        {/* Image circulaire */}
+        <img
+            src="/image/img2.jpg"
+          className="w-80 h-80 rounded-full object-cover relative z-10"
+          style={{
+            boxShadow: "0 20px 60px rgba(151,196,89,0.2)",
+            border: "2px solid rgba(151,196,89,0.3)",
+          }}
+        />
+
+        {/* Glow effect */}
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "350px",
+            height: "350px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, rgba(151,196,89,0.15) 0%, transparent 70%)",
+            pointerEvents: "none",
+          }}
+        />
+      </div>
+
+      {/* ── Photo mobile (responsive) ── */}
+      <div
+        className="lg:hidden flex justify-center mt-12 mb-8"
+        style={{
+          animation: "fadeUp 0.8s 0.5s ease both",
+        }}
+      >
+        <div style={{ position: "relative" }}>
+          <div
+            style={{
+              position: "absolute",
+              width: "280px",
+              height: "280px",
+              borderRadius: "50%",
+              border: "1px solid rgba(151,196,89,0.2)",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              animation: "spin 30s linear infinite",
+            }}
+          />
+          <img
+            src="/image/img1.jpg"
+            alt="Photo professionnelle"
+            className="w-60 h-60 rounded-full object-cover relative z-10"
+            style={{
+              boxShadow: "0 15px 40px rgba(151,196,89,0.2)",
+              border: "2px solid rgba(151,196,89,0.3)",
+            }}
+          />
+        </div>
+      </div>
+
       {/* ── Scroll indicator ── */}
       <div
         className="absolute bottom-8 left-1/2 flex flex-col items-center gap-2"
@@ -333,6 +427,10 @@ export default function Hero() {
           0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
           50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
           100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+        }
+        @keyframes spin {
+          from { transform: rotate(0deg) translateX(-50%) translateY(-50%); }
+          to { transform: rotate(360deg) translateX(-50%) translateY(-50%); }
         }
       `}</style>
     </section>
