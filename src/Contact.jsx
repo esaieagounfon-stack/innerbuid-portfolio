@@ -170,12 +170,8 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
-      style={{
-        position: "relative", overflow: "hidden",
-        padding: "112px 0 80px",
-        background: "#0f1f0b",
-        fontFamily: "'Syne', sans-serif",
-      }}
+      className="relative overflow-hidden py-28 pb-20 bg-black"
+      style={{ fontFamily: "'Syne', sans-serif" }}
     >
       {/* Séparateur haut */}
       <div aria-hidden="true" style={{

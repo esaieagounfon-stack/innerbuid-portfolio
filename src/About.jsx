@@ -31,8 +31,8 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative overflow-hidden py-28"
-      style={{ background: "#0d1a0a", fontFamily: "'Syne', sans-serif" }}
+      className="relative overflow-hidden py-28 bg-black"
+      style={{ fontFamily: "'Syne', sans-serif" }}
     >
       {/* Séparateur haut */}
       <div

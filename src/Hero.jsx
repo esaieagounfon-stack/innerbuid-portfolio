@@ -43,7 +43,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-vert-900"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-black"
       style={{ fontFamily: "'Syne', sans-serif" }}
     >
       {/* ── Grille de fond décorative ── */}

@@ -254,12 +254,8 @@ export default function Projects() {
     <section
       id="projects"
       ref={ref}
-      style={{
-        position: "relative", overflow: "hidden",
-        padding: "112px 0",
-        background: "#0d1a0a",
-        fontFamily: "'Syne', sans-serif",
-      }}
+      className="relative overflow-hidden py-28 bg-black"
+      style={{ fontFamily: "'Syne', sans-serif" }}
     >
       {/* Séparateurs */}
       <div aria-hidden="true" style={{
