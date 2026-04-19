@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const roles = [
   "Développeur Front-End",
+  "Développeur Back-End",
   "Créateur d'interfaces",
   "Passionné du web",
 ];
@@ -28,8 +29,10 @@ export default function Hero() {
         setDisplayed(displayed.slice(0, -1));
       }, 35);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setRoleIndex((i) => (i + 1) % roles.length);
+      timeoutRef.current = setTimeout(() => {
+        setDeleting(false);
+        setRoleIndex((i) => (i + 1) % roles.length);
+      }, 500);
     }
     return () => clearTimeout(timeoutRef.current);
   }, [displayed, deleting, roleIndex]);
@@ -111,7 +114,7 @@ export default function Hero() {
               animation: "pulse 2s infinite",
             }}
           />
-          Je suis disponible pour tous les projets
+          Quelle est ta préoccupation ?
         </div>
 
         {/* Nom principal */}
@@ -198,7 +201,7 @@ export default function Hero() {
           style={{ animation: "fadeUp 0.6s 0.4s ease both" }}
         >
           <a
-            href="#projets"
+            href="#projects"
             className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold overflow-hidden transition-all duration-300"
             style={{
               background: "#D4537E",

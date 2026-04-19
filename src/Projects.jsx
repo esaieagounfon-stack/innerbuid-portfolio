@@ -314,7 +314,7 @@ export default function Projects() {
               border: "0.5px solid rgba(151,196,89,0.3)",
               background: "rgba(55,109,17,0.08)",
               color: "#97C459", fontSize: "12px", fontWeight: 600,
-              textDecoration: "none", transition: "all 0.2s",
+              textDecoration: "none",
               fontFamily: "'JetBrains Mono', monospace",
               opacity: visible ? 1 : 0,
               transform: visible ? "translateY(0)" : "translateY(24px)",
@@ -362,7 +362,7 @@ export default function Projects() {
             color: "rgba(192,221,151,0.3)",
             letterSpacing: "0.05em",
           }}>
-            D'autres projets en cours — le meilleur reste à venir.
+            D'autres projets en cours...
           </p>
         </div>
       </div>

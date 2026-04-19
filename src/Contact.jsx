@@ -17,7 +17,7 @@ const socials = [
   {
     name: "LinkedIn",
     handle: "Esaïe AG Dev",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/esaïe-agounfon-389809339?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     color: "#97C459",
     border: "rgba(151,196,89,0.25)",
     bg: "rgba(55,109,17,0.08)",
