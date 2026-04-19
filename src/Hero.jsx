@@ -1,3 +1,4 @@
+// import { useEffect, useRef, useState } from "react";
 import { useEffect, useRef, useState } from "react";
 
 const roles = [
@@ -110,7 +111,7 @@ export default function Hero() {
               animation: "pulse 2s infinite",
             }}
           />
-          Disponible pour des projets
+          Je suis disponible pour tous les projets
         </div>
 
         {/* Nom principal */}
@@ -186,9 +187,9 @@ export default function Hero() {
             fontWeight: 400,
           }}
         >
-          Je transforme des idées en expériences web mémorables —
-          du code propre, des interfaces qui captivent, et une
-          attention obsessionnelle aux détails.
+          Je transforme vos idées en expériences web unique.
+          Du code propre, des interfaces qui captivent avec
+          un design épuré.
         </p>
 
         {/* Boutons CTA */}
